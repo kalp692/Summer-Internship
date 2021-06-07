@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/backg"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="30sp"
+        android:text="Registration Form"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="5dp"/>
+
+        <EditText
+            android:id="@+id/nameEt"
+            android:layout_width="343dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:background="#5676"
+            android:hint="Enter Name"
+            android:textColorHint="	#ADD8E6"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="35dp"
+            android:textColor="@color/white"
+            android:text="Gender"
+            android:textSize="20dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/Male"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Male"
+
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/Female"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Female"
+
+                android:textSize="20dp" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Email:"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"/>
+
+        <EditText
+            android:id="@+id/emailEt"
+            android:textColor="@color/white"
+            android:layout_width="344dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:background="#5676"
+            android:hint="Enter Email Address"
+            android:textColorHint="	#ADD8E6"
+            android:textSize="20dp"
+            tools:ignore="DuplicateIds" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Mobile:"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"/>
+
+        <EditText
+            android:id="@+id/mobileEt"
+            android:textColor="@color/white"
+            android:layout_width="338dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="31dp"
+            android:background="#5676"
+            android:hint="Enter Mobile Number"
+            android:textColorHint="	#ADD8E6"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="Password:"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"/>
+
+        <EditText
+            android:id="@+id/passwordEt"
+            android:textColor="@color/white"
+            android:layout_width="328dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="3dp"
+            android:background="#5676"
+            android:hint="Enter Password"
+            android:textColorHint="	#ADD8E6"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hobbies:"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"/>
+
+        <EditText
+            android:id="@+id/hobby1Et"
+            android:textColor="@color/white"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="17dp"
+            android:background="#5676"
+            android:hint="Enter Hobby"
+            android:textColorHint="	#ADD8E6"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="56dp">
+
+
+        <EditText
+            android:id="@+id/hobby2Et"
+            android:textColor="@color/white"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="17dp"
+            android:background="#5676"
+            android:hint="Enter Hobby"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="56dp">
+
+
+        <EditText
+            android:id="@+id/hobby3Et"
+            android:textColor="@color/white"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="17dp"
+            android:background="#5676"
+            android:hint="Enter Hobby"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="56dp">
+
+
+        <EditText
+            android:id="@+id/hobby4Et"
+            android:textColor="@color/white"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="17dp"
+            android:background="#5676"
+            android:hint="Enter Hobby"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        />
+
+
+</LinearLayout>
