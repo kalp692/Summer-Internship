@@ -1,4 +1,4 @@
-06.14 09:25
+
 package com.example.videoplay;
 
 import androidx.appcompat.app.AppCompatActivity;
