@@ -1,4 +1,4 @@
-05.28 18:46
+
 package com.dreamproject.helloworld;
 
 import androidx.appcompat.app.AppCompatActivity;
