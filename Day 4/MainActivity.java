@@ -1,4 +1,4 @@
-05.31 18:27
+
 package com.dreamproject.intent;
 
 import androidx.appcompat.app.AppCompatActivity;
